@@ -187,3 +187,17 @@ input[type="radio"]:checked ~ .slides {
 .slide:hover img {
     filter: grayscale(0%); 
 }
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+input[type="radio"]:checked ~ .slides {
+    animation: none;
+}
