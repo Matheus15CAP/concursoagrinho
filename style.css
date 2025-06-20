@@ -28,8 +28,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 1rem;
-    background-color: white;
+    height: 16vh;
 }
 
 .listaitens {
