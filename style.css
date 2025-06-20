@@ -11,3 +11,7 @@ body {
     display: flex;
     text-decoration: none;
 }
+
+.logo {
+    size: 13rem;
+}
