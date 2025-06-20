@@ -71,12 +71,18 @@ header {
 
 .tit1div {
     display: flex;
-    justify-content: center; 
-    flex-grow: 1; 
-    position: absolute; 
-    left: 0;
-    right: 0;
-    pointer-events: none; 
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    width: auto;
+    max-width: calc(100% - 10rem);
+}
+
+.tit1 {
+    white-space: nowrap;
+    padding: 0 1rem; /* Adiciona um pouco de espaço nas laterais */
 }
 
 .main {
