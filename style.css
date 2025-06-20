@@ -14,34 +14,27 @@ body {
 }
 
 .navlist {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    grid-column: 3;
+     display: flex;
+    gap: 1rem;
     margin-left: auto;
+    list-style: none;
 }
 
 header {
-    color: black;
     background-color: white;
-    width: 100vw;
+    width: 100%;
     height: 5rem;
     position: fixed;
     top: 0;
     z-index: 1000;
-    justify-content: space-between; 
-    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .logo {
     height: 5rem;
     width: 5rem;
-    display: flex;
-    justify-content: space-around;
-    margin-right: auto; 
-    pointer-events: none; 
-    grid-column: 1;
-    margin-right: 0;
+    margin-right: auto;
 }
 
 .nav-bar {
@@ -70,6 +63,7 @@ header {
     display: flex;
     align-items: center;
     white-space: nowrap; 
+    list-style: none;
 }
 
 .navlist li:hover {
@@ -77,20 +71,15 @@ header {
 }
 
 .tit1div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    grid-column: 2; 
-    text-align: center;
+    position: absolute; /* SÓ ISSO, mas sem coordenadas fixas (fica no fluxo) */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza de verdade */
+    pointer-events: none;
 }
 
 .tit1 {
     white-space: nowrap;
     font-size: clamp(1rem, 4vw, 1.5rem);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin: 0 auto; 
 }
 
 .main {
