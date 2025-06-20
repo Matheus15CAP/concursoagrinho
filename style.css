@@ -77,6 +77,6 @@ header {
     pointer-events: none; 
 }
 
-main {
-margin-top: 15rem;
+.main {
+margin-top: 5rem;
 }
