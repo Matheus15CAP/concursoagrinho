@@ -70,18 +70,6 @@ header {
     scale: 110%
 }
 
-.tit1div {
-    position: absolute; /* SÓ ISSO, mas sem coordenadas fixas (fica no fluxo) */
-    left: 50%;
-    transform: translateX(-50%); /* Centraliza de verdade */
-    pointer-events: none;
-}
-
-.tit1 {
-    white-space: nowrap;
-    font-size: clamp(1rem, 4vw, 1.5rem);
-}
-
 .main {
 margin-top: 6rem;
 align-items: center;
