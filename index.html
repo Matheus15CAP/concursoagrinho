@@ -15,6 +15,7 @@
             <li><a class="listaitens" href="#carrossel">Galeria</a></li>
             <li><a class="listaitens" href="#flashcards">Curiosidades</a></li>
             <li><a class="listaitens" href="#container">Dois caminhos, uma conexão</a></li>
+            <li><a class="listaitens" href="#jogo-fazenda"></a></li>
         </ul>
         </nav>
     </header>
@@ -171,5 +172,56 @@
             </div>
         </div>
     </div>
+
+    <section class="farm-game-section" id="jogo-fazenda">
+    <h2 class="game-title">Jogo: farM6 </h2>
+    <div class="farm-game-container">
+        <!-- Área de status do jogo -->
+        <div class="game-status">
+            <div class="resource">
+                <span class="resource-icon">💰</span>
+                <span class="resource-value" id="money">1000</span>
+            </div>
+            <div class="resource">
+                <span class="resource-icon">🌾</span>
+                <span class="resource-value" id="crops">0</span>
+            </div>
+            <div class="resource">
+                <span class="resource-icon">🚜</span>
+                <span class="resource-value" id="tractors">0</span>
+            </div>
+        </div>
+        
+        <!-- Área de ações do jogo -->
+        <div class="game-actions">
+            <div class="action-card">
+                <h3>Plantar</h3>
+                <p>Custa: <span class="cost">50</span>💰</p>
+                <p>Produz: 1🌾</p>
+                <button class="action-btn" onclick="plantCrop()">Plantar</button>
+            </div>
+            
+            <div class="action-card">
+                <h3>Vender Colheita</h3>
+                <p>Preço: <span class="cost">100</span>💰/🌾</p>
+                <button class="action-btn" onclick="sellCrops()">Vender Tudo</button>
+            </div>
+            
+            <div class="action-card">
+                <h3>Comprar Trator</h3>
+                <p>Custa: <span class="cost">500</span>💰</p>
+                <p>Aumenta produção em 2🌾 por plantio</p>
+                <button class="action-btn" onclick="buyTractor()">Comprar</button>
+            </div>
+        </div>
+        <div class="farm-visual">
+            <div class="farm-field" id="farm-field">
+                <!-- Aqui serão adicionadas as plantações dinamicamente -->
+            </div>
+            <div class="farm-equipment">
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
