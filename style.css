@@ -66,6 +66,7 @@ header {
 
 .navlist li:hover {
     scale: 110%;
+    color: rgb(105, 231, 101);
 }
 
 .tit1div {
@@ -137,7 +138,6 @@ input[type="radio"] {
     display: none;
 }
 
-/* Bolinhas de navegação */
 .navegacao {
     position: absolute;
     bottom: 20px;
@@ -156,14 +156,11 @@ input[type="radio"] {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-
-/* Efeito das bolinhas */
 .navegacao label:hover {
     background: white;
     transform: scale(1.2);
 }
 
-/* Controle dos slides */
 #slide1:checked ~ .slides {
     transform: translateX(0);
 }
@@ -174,7 +171,6 @@ input[type="radio"] {
     transform: translateX(-66.66%);
 }
 
-/* Bolinha ativa */
 #slide1:checked ~ .navegacao label[for="slide1"],
 #slide2:checked ~ .navegacao label[for="slide2"],
 #slide3:checked ~ .navegacao label[for="slide3"] {
