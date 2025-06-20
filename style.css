@@ -9,7 +9,6 @@ body {
 .navlist {
     list-style: none;
     display: flex;
-    text-decoration: none;
 }
 
 .logo {
@@ -22,4 +21,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 1rem;
+}
+
+.listaitens {
+    text-decoration: none;
 }
