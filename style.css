@@ -5,11 +5,11 @@
 }
 
 body {
-    background: #ffffff;
+    background: #313131;
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
 }
 
