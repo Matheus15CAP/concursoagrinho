@@ -423,7 +423,7 @@ html {
 .grao {
   width: 40px;
   height: 40px;
-  background-image: url('grao-cafe.png'); /* ou usar emoji 🌰 */
+  background-image: url('🌰'); 
   left: 50%;
   top: 20%;
   animation: aparecer 1s forwards,
@@ -434,7 +434,7 @@ html {
 .po {
   width: 30px;
   height: 30px;
-  background-image: url('po-cafe.png'); /* ou ☕ */
+  background-image: url('🌰'); 
   left: 50%;
   top: 30%;
   animation: aparecer 1s 3s forwards;
@@ -444,7 +444,7 @@ html {
 .cafeteira {
   width: 60px;
   height: 80px;
-  background-image: url('cafeteira.png'); /* ou 🫖 */
+  background-image: url('🥛'); 
   left: 45%;
   top: 40%;
   animation: aparecer 1s 5s forwards,
@@ -465,7 +465,7 @@ html {
 .xicara {
   width: 50px;
   height: 60px;
-  background-image: url('xicara.png'); /* ou ☕️ */
+  background-image: url(☕️); 
   left: 45%;
   top: 70%;
   animation: aparecer 1s 9s forwards,
