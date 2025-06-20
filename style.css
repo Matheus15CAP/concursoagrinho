@@ -109,15 +109,17 @@ justify-content: center;
     position: relative;
 }
 
+/* Container dos slides */
 .slides {
     display: flex;
     width: 300%;
-    animation: autoplay 12s infinite;
+    /* Remova qualquer transition ou animation aqui */
 }
 
 .slide {
     width: 33.33%;
     flex-shrink: 0;
+    transition: transform 0.5s ease-in-out; /* Transição suave entre slides */
 }
 
 .slide img {
@@ -132,6 +134,7 @@ justify-content: center;
     filter: grayscale(0%);
 }
 
+/* Controles */
 input[type="radio"] {
     display: none;
 }
@@ -155,21 +158,33 @@ input[type="radio"] {
     transition: all 0.3s ease;
 }
 
+/* Funcionamento MANUAL */
 #slide1:checked ~ .slides {
-    animation: none;
     transform: translateX(0);
 }
-
 #slide2:checked ~ .slides {
-    animation: none;
     transform: translateX(-33.33%);
 }
-
 #slide3:checked ~ .slides {
-    animation: none;
     transform: translateX(-66.66%);
 }
 
+/* Funcionamento AUTOMÁTICO (quando nenhum radio está selecionado) */
+.slides {
+    animation: autoplay 12s infinite;
+}
+
+/* Pausa quando passa o mouse */
+.carrossel:hover .slides {
+    animation-play-state: paused;
+}
+
+/* Desativa o autoplay quando um radio está selecionado */
+input[type="radio"]:checked ~ .slides {
+    animation: none;
+}
+
+/* Estilo das bolinhas ativas */
 #slide1:checked ~ .navegacao label[for="slide1"],
 #slide2:checked ~ .navegacao label[for="slide2"],
 #slide3:checked ~ .navegacao label[for="slide3"] {
@@ -177,6 +192,7 @@ input[type="radio"] {
     transform: scale(1.2);
 }
 
+/* Keyframes para o autoplay */
 @keyframes autoplay {
     0%, 25% { transform: translateX(0); }
     33.33%, 58.33% { transform: translateX(-33.33%); }
