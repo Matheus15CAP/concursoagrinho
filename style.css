@@ -67,9 +67,5 @@ header {
 
 .tit1div{
     display: flex;
-    margin-left: 5rem;
-}
-
-.tit1 {
- font-size: 4rem;
+    margin-left: 50%;
 }
