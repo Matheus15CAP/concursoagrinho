@@ -24,6 +24,7 @@ header {
     width: 100vw;
     position: relative;
     height: 5rem;
+    position: fixed;
 }
 
 .logo {
@@ -74,4 +75,9 @@ header {
     left: 0;
     right: 0;
     pointer-events: none; 
+}
+
+.txttit {
+    top: 5rem;
+    left: 5rem;
 }
