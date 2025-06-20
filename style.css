@@ -11,6 +11,10 @@ body {
     display: flex;
 }
 
+header {
+    background-color: white;
+}
+
 .logo {
     height: 5rem;
     width: 5rem;
