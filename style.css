@@ -125,15 +125,9 @@ justify-content: center;
     width: 100%;
     height: auto;
     border-radius: 8px;
-    filter: grayscale(70%); /* Começa em P&B */
     transition: filter 0.5s ease;
 }
 
-.slide:hover img {
-    filter: grayscale(0%); /* Colorido no hover */
-}
-
-/* Esconde os inputs */
 input[type="radio"] {
     display: none;
 }
