@@ -80,4 +80,20 @@ header {
 
 .main {
 margin-top: 5rem;
+align-items: center;
+flex-direction: column;
+padding: 0 1 rem;
+}
+
+.txttit {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.txt {
+ text-align: justify;
+ line-height: 1.1;
+ padding: 0 1rem;
+ box-sizing: border-box;
 }
