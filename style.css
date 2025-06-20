@@ -41,6 +41,11 @@ header {
     flex-wrap: wrap; 
 }
 
+.nav-bar img {
+    display: block;
+  margin-left: 0;
+}
+
 .listaitens {
     text-decoration: none;
     color: black;
