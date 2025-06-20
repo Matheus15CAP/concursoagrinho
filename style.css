@@ -32,6 +32,7 @@ header {
     display: flex;
     justify-content: space-around;
     margin-right: auto; 
+    pointer-events: none; 
 }
 
 .nav-bar {
@@ -59,6 +60,7 @@ header {
     display: flex;
     align-items: center;
     white-space: nowrap; 
+    pointer-events: none; 
 }
 
 .navlist li:hover {
