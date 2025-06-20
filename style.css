@@ -13,5 +13,6 @@ body {
 }
 
 .logo {
-    size: 13rem;
+    height: 5rem;
+    width: 5rem;
 }
