@@ -109,32 +109,35 @@ justify-content: center;
     position: relative;
 }
 
-/* Container dos slides */
 .slides {
     display: flex;
     width: 300%;
-    animation: autoplay 12s infinite;
+    transition: transform 0.5s ease-in-out; /* Transição suave */
 }
 
 .slide {
     width: 33.33%;
     flex-shrink: 0;
-    transition: transform 0.5s ease-in-out;
 }
 
 .slide img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    filter: grayscale(70%);
+    filter: grayscale(70%); /* Começa em P&B */
     transition: filter 0.5s ease;
 }
 
-/* Controles */
+.slide:hover img {
+    filter: grayscale(0%); /* Colorido no hover */
+}
+
+/* Esconde os inputs */
 input[type="radio"] {
     display: none;
 }
 
+/* Bolinhas de navegação */
 .navegacao {
     position: absolute;
     bottom: 20px;
@@ -154,37 +157,27 @@ input[type="radio"] {
     transition: all 0.3s ease;
 }
 
-/* Funcionamento MANUAL */
+/* Efeito das bolinhas */
+.navegacao label:hover {
+    background: white;
+    transform: scale(1.2);
+}
+
+/* Controle dos slides */
 #slide1:checked ~ .slides {
-    animation: none;
     transform: translateX(0);
 }
 #slide2:checked ~ .slides {
-    animation: none;
     transform: translateX(-33.33%);
 }
 #slide3:checked ~ .slides {
-    animation: none;
     transform: translateX(-66.66%);
 }
 
-/* Estilo bolinhas ativas */
+/* Bolinha ativa */
 #slide1:checked ~ .navegacao label[for="slide1"],
 #slide2:checked ~ .navegacao label[for="slide2"],
 #slide3:checked ~ .navegacao label[for="slide3"] {
     background: white;
     transform: scale(1.2);
-}
-
-/* Autoplay */
-@keyframes autoplay {
-    0%, 25% { transform: translateX(0); }
-    33.33%, 58.33% { transform: translateX(-33.33%); }
-    66.66%, 91.66% { transform: translateX(-66.66%); }
-    100% { transform: translateX(0); }
-}
-
-/* Pausa no hover */
-.carrossel:hover .slides {
-    animation-play-state: paused;
 }
