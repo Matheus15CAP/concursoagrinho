@@ -65,8 +65,7 @@ header {
 }
 
 .navlist li:hover {
-    scale: 110%;
-    color: rgb(105, 231, 101);
+    scale: 110%
 }
 
 .tit1div {
