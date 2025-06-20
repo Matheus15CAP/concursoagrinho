@@ -70,43 +70,13 @@ header {
 }
 
 .tit1div {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    width: max-content;
-    max-width: 50%;
-    text-align: center;
-}
-
-.tit1 {
-    white-space: nowrap;
-    font-size: clamp(1rem, 3vw, 1.5rem); /* Tamanho responsivo */
-}
-
-@media (max-width: 768px) {
-    .nav-bar {
-        justify-content: space-between;
-    }
-    
-    .tit1div {
-        position: static;
-        transform: none;
-        order: 2;
-        width: 100%;
-        max-width: 100%;
-    }
-    
-    .navlist {
-        margin-left: 0;
-        order: 1;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .logo {
-        order: 0;
-    }
+    display: flex;
+    justify-content: center; 
+    flex-grow: 1; 
+    position: absolute; 
+    left: 0;
+    right: 0;
+    pointer-events: none; 
 }
 
 .main {
