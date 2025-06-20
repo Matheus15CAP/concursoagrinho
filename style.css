@@ -76,3 +76,7 @@ header {
     right: 0;
     pointer-events: none; 
 }
+
+main {
+margin-top: 5rem;
+}
