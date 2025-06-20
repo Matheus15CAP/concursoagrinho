@@ -46,11 +46,11 @@ header {
 
 .nav-bar {
     display: grid;
-    grid-template-columns: auto 1fr auto; /* Mantém esta configuração */
-    justify-content: space-between;
+    grid-template-columns: auto 1fr auto; 
     align-items: center;
-    padding: 0rem 1rem;
     width: 100%;
+    padding: 0 1rem;
+    gap: 1rem; 
 }
 
 .nav-bar img {
@@ -79,19 +79,18 @@ header {
 .tit1div {
     display: flex;
     justify-content: center;
-    align-items: center; /* Adicione esta linha para centralizar verticalmente */
-    width: 100%; /* Garante que ocupe todo o espaço disponível */
-    grid-column: 2; /* Mantém na coluna do meio do grid */
-    pointer-events: none;
+    align-items: center;
+    width: 100%;
+    grid-column: 2; 
+    text-align: center;
 }
 
 .tit1 {
-     white-space: nowrap;
-    text-align: center;
+    white-space: nowrap;
     font-size: clamp(1rem, 4vw, 1.5rem);
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 100%;
+    margin: 0 auto; 
 }
 
 .main {
