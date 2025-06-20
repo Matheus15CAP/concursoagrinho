@@ -75,8 +75,7 @@ header {
     flex-grow: 1; 
     position: static; 
     margin: 0 1rem; 
-    pointer-events: none;
-    position: absolute;  
+    pointer-events: none; 
     left: 50%;           
     transform: translateX(-50%); 
     margin: 0;           
