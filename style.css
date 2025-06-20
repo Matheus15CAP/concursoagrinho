@@ -167,3 +167,23 @@ input[type="radio"]:checked + .navegacao label {
     66% { transform: translateX(-66.66%); }
     100% { transform: translateX(0); }
 }
+
+input[type="radio"]:checked ~ .slides {
+    animation: none !important;
+}
+
+/* Destaca a bolinha do slide atual */
+#slide1:checked ~ .navegacao label[for="slide1"],
+#slide2:checked ~ .navegacao label[for="slide2"],
+#slide3:checked ~ .navegacao label[for="slide3"] {
+    background: white;
+    transform: scale(1.2);
+}
+.slide img {
+    filter: grayscale(70%); 
+    transition: filter 0.5s ease;
+}
+
+.slide:hover img {
+    filter: grayscale(0%); 
+}
