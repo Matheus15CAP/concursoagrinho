@@ -65,7 +65,12 @@ header {
     scale: 110%;
 }
 
-.tit1div{
+.tit1div {
     display: flex;
-    margin-left: 50%;
+    justify-content: center; 
+    flex-grow: 1; 
+    position: absolute; 
+    left: 0;
+    right: 0;
+    pointer-events: none; 
 }
