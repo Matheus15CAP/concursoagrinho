@@ -30,7 +30,7 @@ header {
     height: 5rem;
     width: 5rem;
     display: block;
-    left: 0;
+    margin-right: 10rem;
 }
 
 .nav-bar {
