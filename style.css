@@ -29,7 +29,8 @@ header {
 .logo {
     height: 5rem;
     width: 5rem;
-    display: block;
+    display: flex;
+    justify-content: space-around;
     margin-right: 10rem;
 }
 
