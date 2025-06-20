@@ -5,11 +5,11 @@
 }
 
 body {
-    background: #ffffff;
+    background: #272727;
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family: Arial, sans-serif;
 }
 
@@ -20,11 +20,10 @@ body {
 }
 
 header {
-    background-color: rgb(49, 49, 49);
+    background-color: rgb(255, 255, 255);
     width: 100vw;
     position: relative;
     height: 5rem;
-    color: white;
 }
 
 .logo {
