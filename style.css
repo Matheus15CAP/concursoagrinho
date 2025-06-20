@@ -173,9 +173,6 @@ input[type="radio"]:checked + .navegacao label {
     100% { transform: translateX(0); }
 }
 
-input[type="radio"]:checked ~ .slides {
-    animation: none !important;
-}
 #slide1:checked ~ .navegacao label[for="slide1"],
 #slide2:checked ~ .navegacao label[for="slide2"],
 #slide3:checked ~ .navegacao label[for="slide3"] {
@@ -192,6 +189,6 @@ input[type="radio"]:checked ~ .slides {
 }
 
 .carrossel:hover .slides,
-input:checked ~ .slides {
+input[type="radio"]:focus ~ .slides {
     animation-play-state: paused;
 }
