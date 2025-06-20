@@ -64,3 +64,8 @@ header {
 .navlist li:hover {
     scale: 110%;
 }
+
+.tit1{
+    align-items: center;
+    display: flex;
+}
