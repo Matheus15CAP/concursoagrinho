@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background: #679fb8;
+    background: linear-gradient(90deg,rgba(103, 159, 184, 1) 0%, rgba(87, 199, 133, 1) 100%);
     max-width: 100%;
     max-height: 100%;
     overflow-x: hidden;
