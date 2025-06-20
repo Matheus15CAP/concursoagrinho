@@ -70,21 +70,20 @@ header {
 }
 
 .tit1div {
-    position: absolute;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: center;
+    flex-grow: 1; 
+    position: static; 
+    margin: 0 1rem; 
     pointer-events: none;
-    margin: 0 auto; 
-    width: fit-content; 
-    max-width: calc(100% - 12rem); 
+    align-items: center;
+    text-align: center;
 }
 
 .tit1 {
     white-space: nowrap;
-    padding: 0 1rem;
     text-align: center;
+    font-size: clamp(1rem, 4vw, 1.5rem); 
 }
 
 .main {
