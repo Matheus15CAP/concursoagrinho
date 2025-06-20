@@ -5,11 +5,11 @@
 }
 
 body {
-    background: #272727;
+    background: #ffffff;
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    color: rgb(255, 255, 255);
+    color: black;
     font-family: Arial, sans-serif;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 100vw;
     position: relative;
     height: 5rem;
@@ -60,7 +60,6 @@ header {
     display: flex;
     align-items: center;
     white-space: nowrap; 
-    pointer-events: none; 
 }
 
 .navlist li:hover {
