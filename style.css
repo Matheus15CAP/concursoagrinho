@@ -94,10 +94,10 @@ justify-content: center;
 
 .txt {
  max-width: 800px;
-    width: 90%; /* Deixa uma margem nas laterais */
-    margin: 0 auto; /* Centraliza o bloco */
+    width: 90%; 
+    margin: 0 auto; 
     padding: 1rem;
-    text-align: justify; /* Texto justificado */
-    text-justify: inter-word; /* Melhora a justificação */
+    text-align: justify; 
+    text-justify: inter-word; 
     line-height: 1.6;
 }
