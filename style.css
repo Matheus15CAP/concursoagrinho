@@ -27,6 +27,8 @@ header {
     position: fixed;
     top: 0;
     z-index: 1000;
+    justify-content: space-between; 
+    align-items: center;
 }
 
 .logo {
@@ -70,20 +72,20 @@ header {
 }
 
 .tit1div {
-    flex: 1; /* Ocupa todo o espaço disponível */
+    flex: 1;
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    min-width: 0; /* Permite que o texto seja truncado se necessário */
+    justify-content: center;
+    min-width: 0;
     pointer-events: none;
 }
 
 .tit1 {
-    white-space: nowrap;
+     white-space: nowrap;
     text-align: center;
     font-size: clamp(1rem, 4vw, 1.5rem);
-    overflow: hidden; /* Garante que não vaze do container */
-    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
-    max-width: 100%; /* Não ultrapassa a largura do container */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .main {
