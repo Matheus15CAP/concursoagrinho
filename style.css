@@ -366,19 +366,8 @@ input[type="radio"] {
     text-align: center;
 }
 
-.flashcard-front {
-    background-color: #4CAF50;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .flashcard-back {
-    background-color: #4CAF50;
-    color: rgb(0, 0, 0);
     transform: rotateY(180deg);
-    font-size: 1rem;
-    line-height: 1.5;
 }
 
 .flashcard:nth-child(1) .flashcard-front,
@@ -401,7 +390,6 @@ input[type="radio"] {
     background-color: #2196F3; /* Vermelho */
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .flashcards-container {
         grid-template-columns: 1fr 1fr;
