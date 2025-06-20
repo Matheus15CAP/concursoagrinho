@@ -387,3 +387,17 @@ input[type="radio"] {
         grid-template-columns: 1fr;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; 
+}
+
+.listaitens {
+    transition: all 0.3s ease;
+}
+
+.listaitens:active {
+    color: #4CAF50;
+    transform: scale(1.1);
+}
