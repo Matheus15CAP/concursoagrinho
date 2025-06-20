@@ -159,12 +159,10 @@ input[type="radio"] {
     animation: none;
     transform: translateX(0);
 }
-
 #slide2:checked ~ .slides {
     animation: none;
     transform: translateX(-33.33%);
 }
-
 #slide3:checked ~ .slides {
     animation: none;
     transform: translateX(-66.66%);
@@ -186,17 +184,7 @@ input[type="radio"] {
     100% { transform: translateX(0); }
 }
 
-/* Pausa no hover e quando um slide está selecionado */
-.carrossel:hover .slides,
-.carrossel input:checked ~ .slides {
+/* Pausa no hover */
+.carrossel:hover .slides {
     animation-play-state: paused;
-}
-
-/* Retorna ao automático depois de um tempo quando não está em hover */
-.carrossel input:checked ~ .slides {
-    animation-delay: -1s; /* Reinicia o tempo de pausa */
-}
-
-.carrossel input:not(:checked) ~ .slides {
-    animation-play-state: running;
 }
