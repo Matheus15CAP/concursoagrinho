@@ -70,21 +70,20 @@ header {
 }
 
 .tit1div {
+    flex: 1; /* Ocupa todo o espaço disponível */
     display: flex;
-    justify-content: center;
-    flex-grow: 1; 
-    position: static; 
-    margin: 0 1rem; 
-    pointer-events: none; 
-    left: 50%;           
-    transform: translateX(-50%); 
-    margin: 0;           
+    justify-content: center; /* Centraliza horizontalmente */
+    min-width: 0; /* Permite que o texto seja truncado se necessário */
+    pointer-events: none;
 }
 
 .tit1 {
     white-space: nowrap;
     text-align: center;
-    font-size: clamp(1rem, 4vw, 1.5rem);  
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    overflow: hidden; /* Garante que não vaze do container */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    max-width: 100%; /* Não ultrapassa a largura do container */
 }
 
 .main {
