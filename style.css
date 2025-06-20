@@ -167,8 +167,3 @@ input[type="radio"]:checked + .navegacao label {
     66% { transform: translateX(-66.66%); }
     100% { transform: translateX(0); }
 }
-
-.carrossel:hover .slides {
-    animation-play-state: paused;
-    
-}
