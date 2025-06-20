@@ -27,3 +27,14 @@ nav {
     text-decoration: none;
     color: black;
 }
+
+.navlist li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    margin-right: 32px;
+    transition: 0.5s;
+}
+
+.navlist li:hover {
+    scale: 110%;
+}
