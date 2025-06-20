@@ -41,7 +41,7 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 1.5rem 2rem;
-    flex-wrap: wrap; /* deixa o menu quebrar linha em telas pequenas */
+    flex-wrap: wrap; 
 }
 
 .listaitens {
