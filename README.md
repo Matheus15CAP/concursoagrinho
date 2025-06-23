@@ -22,6 +22,7 @@ Protótipo Estático – Desenvolvido exclusivamente com HTML e CSS:
 - Os elementos interativos (ex: flashcards, carrossel) utilizam somente recursos visuais e de estilo.
 - Navegação limitada a uma única página com rolagem interna via âncoras.
 - Sem formulários de autenticação ou coleta de dados.
+
 💻 Tecnologias Utilizadas
 - HTML5 semântico.
 - CSS puro, com foco em responsividade.
